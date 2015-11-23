@@ -1,0 +1,14 @@
+development:
+  mailer_username: "nadiarails84@gmail.com"
+  mailer_password: "BmvYj14rf!"
+  mailer_domain:   "localhost:3000"
+
+production:
+  mailer_username: "nadiarails84@gmail.com"
+  mailer_password: "BmvYj14rf!"
+  mailer_domain:   "localhost:3000"
+
+test:
+  mailer_username: "nadiarails84@gmail.com"
+  mailer_password: "BmvYj14rf!"
+  mailer_domain:   "localhost:3000"

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clonebnb</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  </head>
+  <h1>WELCOME HOME</h1>
+  <h4>Rent unique places to stay from local hosts in 190+ countries</h4>
+<body>
+
+<%= yield %>
+
+<%= link_to "Logout", logout_path, method: :delete %>
+     
+</body>
+</html>
