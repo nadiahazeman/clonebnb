@@ -1,6 +1,12 @@
 // Place all the styles related to the Listings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar-nav {
+
+	li a {
+	color: #F8F8FF;
+	}
+}
 
 .jumbotron-home {
 	margin-top: 0px;
@@ -12,7 +18,7 @@
 }
 
 .jumbotron-home h1{
-	padding-top: 150px;
+	padding-top: 100px;
 	font-size: 60px;
 	color: #F8F8FF;
 }
@@ -24,12 +30,16 @@
 	color: #F8F8FF;
 }
 
-.btn-btn-default-btn-md{
-	background-color: rgba(0, 126, 255, 0.00);
+.btn-btn-default{
 	font-size: 15px;
-	color: #F8F8FF;
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	opacity: 0.5;
+	background-color: #FFF0F5;
 }
-
 
 body {
      margin: 0;
@@ -39,5 +49,6 @@ body {
      display: compact;
      font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 
 
