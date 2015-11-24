@@ -2,18 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.home{
+.jumbotron-home {
 	margin-top: 0px;
 	margin-left: 0px;
 	text-align: center;
+	background-color: rgba(0, 126, 255, 0.00);
+	color: #000000;
+	font-size: 100px;
 }
 
-.home h4{
-	margin-botton: 10px;
+.jumbotron-home h1{
+	padding-top: 150px;
+	font-size: 60px;
+	color: #F8F8FF;
 }
 
-.btn btn-default btn-md{
-	padding-top: 20px;
+.jumbotron-home h4{
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #F8F8FF;
+}
+
+.btn-btn-default-btn-md{
+	background-color: rgba(0, 126, 255, 0.00);
+	font-size: 15px;
+	color: #F8F8FF;
+}
+
+
+body {
+     margin: 0;
+     background: url('https://a0.muscache.com/airbnb/static/landing_pages/pretzel/stills/london-3bd18731b4aacc8413208e5aa1bf13f3.jpg');
+     background-size: 1440px 800px;
+     background-repeat:no-repeat;
+     display: compact;
+     font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
