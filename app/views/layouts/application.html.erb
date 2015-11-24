@@ -6,13 +6,22 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   </head>
-  <h1>WELCOME HOME</h1>
-  <h4>Rent unique places to stay from local hosts in 190+ countries</h4>
+  <%= render 'shared/navbar'%>
+
+  <div class="container">
+	  <div class="jumbotron home">
+	  <h1>WELCOME HOME</h1>
+	  <h4>Rent unique places to stay from local hosts in 190+ countries</h4>
+	  	<p><a class="btn btn-default btn-md" href="#" role="button">How It Works</a></p>
+	</div>
+</div>
 <body>
 
 <%= yield %>
 
 <%= link_to "Logout", logout_path, method: :delete %>
+
+
      
 </body>
 </html>
