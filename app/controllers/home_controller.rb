@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-	def welcome
+	def index
+		@user = User.new
 	end
-
 end
