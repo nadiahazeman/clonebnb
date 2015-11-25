@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
    devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
+   resources :users
+   resources :listings
 
-  resources :listings
-  root 'listings#index'
+  #You can have the root of your site routed with "root"
+  root 'home#index'
+
+  get '/home', to: "home#index"
+
+  #root 'listings#index'
+
   get '/login', to: "sessions#new", as: "login"
 
   devise_scope :user do

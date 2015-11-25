@@ -1,3 +1,15 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<!-- font awesome css -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 <nav class="navbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -13,9 +25,63 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right  ">
+      <ul class="nav navbar-nav navbar-right">
       <form class="navbar-form navbar-right" role="search">
       <ul class="nav navbar-nav navbar-right">
+
+       
+
+        <li class="sign_up"><a href="#" data-toggle="modal" data-target="#bannerformmodal">Sign up!</a></li>
+
+         <!--sign up link -->
+
+          <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+          <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-content">
+                  <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Sign up with Facebook or Email</h4>
+                  </div>
+
+    <body style="text-align:center; padding:1em">
+    <div class="btn-group">
+      <a class='btn btn-primary disabled'><i class="fa fa-facebook" style="width:16px; height:20px"></i></a>
+      <a class='btn btn-primary ' href='' style="width:12em"> Sign in with Facebook</a>
+    </div>  
+    </body>
+                  <div class="modal-body">
+                       <form id="requestacallform" method="POST" name="requestacallform">
+
+                                  <div class="form-group">
+                                      <div class="input-group">                               
+                                      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                      <input id="email1" type="text" class="form-control" placeholder="Email" name="email1" onchange="validateEmailAdd();"/>
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                      <div class="input-group">                               
+                                      <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                                      <input id="password" type="text" class="form-control" placeholder="Password" name="password"/>
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                      <div class="input-group">                               
+                                      <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                                      <input id="password" type="text" class="form-control" placeholder="Repeat password" name="password"/>
+                                      </div>
+                                </div>
+                              </form>
+                    </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-blue">Submit</button>
+                </div>         
+          </div>
+          </div>
+        </div>
+      </div>
+          <!--sign up link -end -->
+          
         <li><a href="#">Become a Host</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
@@ -27,7 +93,6 @@
             <li><a href="#">Change a Reservation as a host</a></li>
           </ul>
         </li>
-        <li><a href="#">Sign Up</a></li>
         <li><a href="#">Login</a></li>
         
       </ul>
