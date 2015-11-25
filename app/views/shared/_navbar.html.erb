@@ -32,13 +32,52 @@
             <li><a href="#">Change a Reservation as a host</a></li>
           </ul>
         </li>
-        <li><a href="#">Login</a></li>
+        <li class="sign_in"><a href="#" data-toggle="modal" data-target="#bannerformmodal2">Login</a></li>
+
         
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
+<!--Login modal -->
+
+<div class="modal fade bannerformmodal2" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal2" aria-hidden="true" id="bannerformmodal2">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="text-center">
+        <%= form_for(@user, url: session_path(:user)) do |f| %>
+        <div class="field">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %><br />
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
+
+        <% if devise_mapping.rememberable? -%>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end -%>
+
+        <div class="actions">
+          <%= f.submit "Log in" %>
+        </div>
+      <% end %>
+      </div>
+      </div>        
+</div>
+</div>
+</div>
+</div>
+
+<!--sign In modal -end -->
 
 <!--sign up modal -->
 
@@ -53,7 +92,7 @@
 
         <div style="text-align:center; padding:1em">
           <div class="btn-group">
-            <a class='btn btn-primary disabled'><i class="fa fa-facebook" style="width:16px; height:20px"></i></a>
+            <a class='btn btn-primary disabled'><i class="fa fa-facebook" style="width:16px; height:15px"></i></a>
             <a class='btn btn-primary ' href='' style="width:12em"> Sign in with Facebook</a>
           </div>  
         </div>

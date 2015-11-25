@@ -8,4 +8,8 @@ module SessionsHelper
 	def user_logged_in?
 		current_user.present?
 	end
+
+	def devise_mapping
+	@devise_mapping ||= Devise.mappings[:user]
+	end
 end
